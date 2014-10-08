@@ -1,0 +1,33 @@
+// DM Environment file for Casual Quest.dme.
+// All manual changes should be made outside the BEGIN_ and END_ blocks.
+// New source code should be placed in .dm files: choose File/New --> Code File.
+
+// BEGIN_INTERNALS
+// END_INTERNALS
+
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+#define FILE_DIR "rsc"
+#define FILE_DIR "rsc/classes"
+#define FILE_DIR "rsc/classes/custom"
+#define FILE_DIR "rsc/classes/subscriber"
+#define FILE_DIR "rsc/mobs"
+#define FILE_DIR "rsc/regions"
+// END_FILE_DIR
+
+// BEGIN_PREFERENCES
+#define DEBUG
+// END_PREFERENCES
+
+// BEGIN_INCLUDE
+#include <kaiochao\absolutepositions\absolute positions\absolute positions.dme>
+#include <kaiochao\actorloop\actor loop\actor loop.dme>
+#include <kaiochao\standinglayer\standing layer\standing layer.dme>
+#include "map.dmm"
+#include "code\___.dm"
+#include "code\enemy.dm"
+#include "code\skill-arrow.dm"
+#include "code\skill-sword.dm"
+#include "code\macros.dms"
+// END_INCLUDE
+

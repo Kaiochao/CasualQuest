@@ -1,0 +1,14 @@
+macro
+	NORTH		return "move 1 1"
+	SOUTH		return "move 2 1"
+	EAST		return "move 4 1"
+	WEST		return "move 8 1"
+	NORTH+UP	return "move 1 0"
+	SOUTH+UP	return "move 2 0"
+	EAST+UP		return "move 4 0"
+	WEST+UP		return "move 8 0"
+
+	SPACE		return "attack"
+	Z			return "skill 1"
+	X			return "skill 2"
+	C			return "skill 3"
