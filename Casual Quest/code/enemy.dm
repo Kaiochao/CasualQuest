@@ -1,3 +1,14 @@
+mob/player
+	Crossed(enemy/E)
+		if(!istype(E)) return
+		while(E in obounds())
+			E.Hit(src)
+			sleep world.tick_lag
+
+	Cross(enemy/E)
+		if(istype(E)) return TRUE
+		return ..()
+
 enemy
 	parent_type = /mob
 	icon = 'enemies.dmi'
@@ -8,9 +19,18 @@ enemy
 		add_actor(src)
 		dir = pick(1, 2, 4, 8)
 
-	Bump(mob/player/P)
-		if(!istype(P)) return ..()
+	proc/Hit(mob/player/P)
 		P.TakeDamage(damage, src)
+
+	Cross(mob/M)
+		if(istype(M)) return TRUE
+		return ..()
+
+	Crossed(mob/player/P)
+		if(!istype(P)) return
+		while(P in obounds())
+			Hit(P)
+			sleep world.tick_lag
 
 	bug
 		icon_state = "bug_1"

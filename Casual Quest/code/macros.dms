@@ -8,7 +8,12 @@ macro
 	EAST+UP		return "move 4 0"
 	WEST+UP		return "move 8 0"
 
+macro
 	SPACE		return "attack"
 	Z			return "skill 1"
 	X			return "skill 2"
 	C			return "skill 3"
+
+macro
+	RETURN		return "focus-toggle"
+//	RETURN		return ".winset \"focus=input ? focus=map : focus=input\""

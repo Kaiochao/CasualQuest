@@ -1,29 +1,34 @@
 "a" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-wall"; icon = 'forrest.dmi'; icon_state = "wall"},/area)
-"b" = (/tile/wall{tag = "icon-water_0"; icon = 'forrest.dmi'; icon_state = "water_0"},/area)
-"c" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-pillar"; icon = 'forrest.dmi'; icon_state = "pillar"},/area)
-"d" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
-"e" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_10"; icon = 'forrest.dmi'; icon_state = "water_10"},/area)
-"f" = (/tile/wall{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_2"; icon = 'forrest.dmi'; icon_state = "water_2"},/area)
-"g" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_2"; icon = 'forrest.dmi'; icon_state = "water_2"},/area)
-"h" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_6"; icon = 'forrest.dmi'; icon_state = "water_6"},/area)
-"i" = (/enemy/bug2,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
-"j" = (/mob/player,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
-"k" = (/enemy/bug,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
+"b" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_8"; icon = 'forrest.dmi'; icon_state = "water_8"},/area)
+"c" = (/tile/wall{tag = "icon-water_0"; icon = 'forrest.dmi'; icon_state = "water_0"},/area)
+"d" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_4"; icon = 'forrest.dmi'; icon_state = "water_4"},/area)
+"e" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-pillar"; icon = 'forrest.dmi'; icon_state = "pillar"},/tile/wall{tag = "icon-wall"; icon = 'forrest.dmi'; icon_state = "wall"},/area)
+"f" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-pillar"; icon = 'forrest.dmi'; icon_state = "pillar"},/area)
+"g" = (/tile/wall{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_9"; icon = 'forrest.dmi'; icon_state = "water_9"},/area)
+"h" = (/tile/wall{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_5"; icon = 'forrest.dmi'; icon_state = "water_5"},/area)
+"i" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
+"j" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_10"; icon = 'forrest.dmi'; icon_state = "water_10"},/area)
+"k" = (/tile/wall{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_2"; icon = 'forrest.dmi'; icon_state = "water_2"},/area)
+"l" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_2"; icon = 'forrest.dmi'; icon_state = "water_2"},/area)
+"m" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_6"; icon = 'forrest.dmi'; icon_state = "water_6"},/area)
+"n" = (/enemy/bug2,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
+"o" = (/mob/player,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
+"p" = (/enemy/bug,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
 
 (1,1,1) = {"
-aaaaaabbbaaaaaa
-acccccbbbccccca
-acdddeffghdddca
-acdddddddddcdca
-acdidddjdddddca
-acdddkdddjdcdca
-acdkdddddddddca
-acddddkdddjcdca
-acdddddddddddca
-acdcdcdcddiddca
-acdddddddddddca
-acdcdcdcdddddca
-acdddddddddddca
-accccccccccccca
+aaaaaabcdaaaaaa
+aefffgccchfffea
+affiijkklmiiifa
+afiiiiiiiiififa
+afiniiioiiiiifa
+afiiipiiioififa
+afipiiiiiiiiifa
+afiiiipiiiofifa
+afiiiiiiiiiiifa
+afififiiiiniifa
+afiiiiiiiififfa
+afifififiiiiifa
+afiiiiiiiififfa
+aefffffffffffea
 aaaaaaaaaaaaaaa
 "}

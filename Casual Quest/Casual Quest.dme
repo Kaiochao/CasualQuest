@@ -24,7 +24,9 @@
 #include <kaiochao\actorloop\actor loop\actor loop.dme>
 #include <kaiochao\standinglayer\standing layer\standing layer.dme>
 #include "map.dmm"
+#include "skin.dms"
 #include "code\___.dm"
+#include "code\chat.dm"
 #include "code\enemy.dm"
 #include "code\skill-arrow.dm"
 #include "code\skill-sword.dm"

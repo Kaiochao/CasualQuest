@@ -6,11 +6,8 @@ world
 	icon_size = 16
 	mob = /mob/player
 
-	New()
+	ActionTick()
 		..()
-		add_actor(src)
-
-	proc/Tick()
 		var players[0]
 		for(var/mob/player/p) players += p
 		for(var/mob/player/a in players)
@@ -96,7 +93,7 @@ mob
 			invincible = TRUE
 			animate(src, alpha = 0, time = world.tick_lag, loop = -1)
 			animate(alpha = 255, time = world.tick_lag)
-			spawn(5 * world.tick_lag)
+			spawn(8 * world.tick_lag)
 				animate(src)
 				invincible = FALSE
 
@@ -106,11 +103,13 @@ mob
 	spectator
 
 	player
-		icon = 'rsc/classes/_blank.dmi'
+		icon = 'rsc/classes/knight.dmi'
 
 		var skills[] = newlist(
-			/skill/sword,
-			/skill/arrow
+			/skill/sword/wood,
+			/skill/sword/steel,
+			/skill/projectile/arrow,
+			/skill/projectile/fireball
 		)
 
 		Cross(atom/movable/M)

@@ -1,0 +1,27 @@
+<style>
+#map {
+	position: absolute;
+	width: 600px;
+}
+#input {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 360px;
+	height: 22px;
+}
+#output {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 23px;
+	width: 360px;
+}
+</style>
+<body>
+<div id=map byondclass=map></div>
+<div id=chat style="width: 360px">
+	<div id=output byondclass=output></div>
+	<div id=input byondclass=input skinparams="command=say"></div>
+</div>
+</body>

@@ -1,8 +1,17 @@
 skill
+
 	sword
-		var icon_state = "wood"
+		var icon_state
 		var obj/sword = new /obj { layer = 5; icon = 'projectiles.dmi' }
-		var damage = 1
+		var damage
+
+		wood
+			icon_state = "wood"
+			damage = 1
+
+		steel
+			icon_state = "sword"
+			damage = 2
 
 		proc/Hit(mob/A, mob/B) // A hit B with src
 			if(istype(A, /mob/player) && istype(B, /mob/player)) return
@@ -30,9 +39,8 @@ skill
 				lengths[dt + 1] = length
 				animate(icon_state = "[icon_state]_[length]", time = world.tick_lag)
 
-			for(var/dt in 0 to 4)
+			for(var/length in lengths)
 				if(!M) break
-				var length = lengths[dt + 1]
 				var width  = dx*length + dy*thickness
 				var height = dy*length + dx*thickness
 				var px = 17*(dx > 0) + 6*abs(dy)
