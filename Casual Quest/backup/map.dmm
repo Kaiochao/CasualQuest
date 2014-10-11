@@ -11,27 +11,23 @@
 "k" = (/tile/wall{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_2"; icon = 'forrest.dmi'; icon_state = "water_2"},/area)
 "l" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_2"; icon = 'forrest.dmi'; icon_state = "water_2"},/area)
 "m" = (/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/tile/wall{tag = "icon-water_6"; icon = 'forrest.dmi'; icon_state = "water_6"},/area)
-"n" = (/player/adventurer,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
-"o" = (/enemy/bug2,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
-"p" = (/player/knight,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
-"q" = (/enemy/bug,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
-"r" = (/player/archer,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
-"s" = (/player/priest,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
-"t" = (/player/mage,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
+"n" = (/enemy/bug2,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
+"o" = (/mob/player,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
+"p" = (/enemy/bug,/tile/floor{tag = "icon-floor"; icon = 'forrest.dmi'; icon_state = "floor"},/area)
 
 (1,1,1) = {"
 aaaaaabcdaaaaaa
 aefffgccchfffea
 affiijkklmiiifa
-afiiiniiiiififa
-afioiiipiiiiifa
-afiiiqiiirififa
-afiqiiiiiiiiifa
-afiiiiqiiisfifa
+afiiiiiiiiififa
+afiniiioiiiiifa
+afiiipiiioififa
+afipiiiiiiiiifa
+afiiiipiiiofifa
 afiiiiiiiiiiifa
-afififiiiioiifa
+afififiiiiniifa
 afiiiiiiiififfa
-afifififiiitifa
+afifififiiiiifa
 afiiiiiiiififfa
 aefffffffffffea
 aaaaaaaaaaaaaaa
