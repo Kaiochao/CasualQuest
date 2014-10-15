@@ -9,7 +9,12 @@ skill/projectile
 		// override the bounds of the projectile
 		bounds
 
+		// only one projectile can exist at a time
+		single_shot = TRUE
+
 	Use(mob/M)
+		if(!single_shot)
+			projectile = initial(projectile)
 		if(ispath(projectile))
 			projectile = new projectile (src)
 		projectile.Go(M)
@@ -33,6 +38,12 @@ skill/projectile
 
 		fire
 			projectile = /projectile/arrow/fire
+			energy_cost = 4
+
+	spear
+		parent_type = /skill/projectile/arrow
+		projectile = /projectile/arrow/spear
+		single_shot = FALSE
 
 projectile
 	parent_type = /obj
@@ -89,8 +100,9 @@ projectile
 				Hit(m)
 
 		Hit(mob/M)
-			if(!istype(M, /player))
-				M.TakeDamage(damage, owner)
+			if(!owner.IsSameTeam(M))
+				if(!(M.shield && M.IsFacing(src)))
+					M.TakeDamage(damage, owner)
 				Stop()
 
 		Go(mob/M)
@@ -164,7 +176,11 @@ projectile
 				fire.SetCenter(Cx() + 3*dir2dx[dir], Cy() + 3*dir2dy[dir], z)
 				..()
 				fire.owner = owner
-				fire.SetLife(100)
+				fire.SetLife(300)
+
+		spear
+			icon_state = "spear"
+			step_size = 2 * DT
 
 	fireball
 		icon_state = "fire_ball"
@@ -189,7 +205,8 @@ obj/fire
 				while(alive && life >= 0)
 					life -= 1
 					for(var/mob/m in obounds())
-						m.TakeDamage(damage, owner)
+						if(!owner.IsSameTeam(m))
+							m.TakeDamage(damage, owner, src)
 					sleep 1
 				alive = FALSE
 				del src

@@ -22,14 +22,6 @@ player
 				layer = 10
 			}
 
-	New()
-		..()
-		InitializeStats()
-
-	Logout()
-		..()
-		del src
-
 	Cross(atom/movable/M)
 		if(istype(M, /player))
 			return TRUE
@@ -40,6 +32,9 @@ player
 		if(!attacking && moving)
 			Step(moving)
 			GridAlign(moving)
+
+	IsSameTeam(player/M)
+		return istype(M)
 
 	Die()
 
@@ -68,10 +63,6 @@ player
 			UseSkill(N + 1)
 
 	proc
-		InitializeStats()
-			SetHealth(max_health)
-			SetEnergy(max_energy)
-
 		UseSkill(N)
 			if(attacking) return
 			if(skills && skills.len >= N)

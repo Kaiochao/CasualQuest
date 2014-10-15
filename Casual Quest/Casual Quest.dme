@@ -37,6 +37,7 @@
 #include "code\movable.dm"
 #include "code\skill--.dm"
 #include "code\skill-axe.dm"
+#include "code\skill-bomb.dm"
 #include "code\skill-heal.dm"
 #include "code\skill-lance.dm"
 #include "code\skill-projectile.dm"

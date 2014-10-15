@@ -12,6 +12,8 @@ mob
 		max_energy = 0
 		energy_rate = 75 // ticks per aura
 
+		shield = FALSE // AKA "front protection"
+
 		tmp
 			attacking = FALSE
 			invincible = FALSE
@@ -19,8 +21,11 @@ mob
 	New()
 		..()
 		add_actor(src)
+		InitializeStats()
 
 	proc
+		IsSameTeam(mob/M)
+
 		Tick()
 			if(!IsInvincible())
 				animate(src)
@@ -40,18 +45,22 @@ mob
 			else
 				Step(dy > 0 ? 1 : 2, TILE_HEIGHT, dir)
 
+		InitializeStats()
+			SetHealth(max_health)
+			SetEnergy(max_energy)
+
 		SetHealth(Health)
 			health = clamp(Health, 0, max_health)
 
 		SetEnergy(Energy)
 			energy = clamp(Energy, 0, max_energy)
 
-		TakeDamage(Damage, Cause)
+		TakeDamage(Damage, Cause, Proxy)
 			if(IsInvincible())
 				return
 
-			if(Cause)
-				Knockback(Cause)
+			if(Proxy || Cause)
+				Knockback(Proxy || Cause)
 
 			SetHealth(health - Damage)
 

@@ -1,6 +1,6 @@
 #define TILE_WIDTH 16
 #define TILE_HEIGHT 16
-#define FPS 25
+#define FPS 30
 #define DT (30 / FPS)
 
 world

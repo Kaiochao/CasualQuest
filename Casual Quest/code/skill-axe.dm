@@ -20,6 +20,10 @@ skill/axe
 		icon_state = "gold_axe"
 		damage = 3
 
+	saber
+		icon_state = "saber"
+		damage = 1
+
 	// i'll do animate() later... maybe...
 	Use(mob/M)
 		M.attacking = TRUE
@@ -35,6 +39,10 @@ skill/axe
 
 			for(var/atom/a in obounds(axe, axe.pixel_x, axe.pixel_y) - M)
 				Hit(M, a)
+
+			if(d & d - 1)
+				axe.pixel_x -= dir2dx[d] * sqrt(2)*2
+				axe.pixel_y -= dir2dy[d] * sqrt(2)*2
 
 			sleep 1
 			if(!M) break
