@@ -52,6 +52,7 @@ player
 
 	archer
 		icon = 'archer.dmi'
+		speed = 2 * DT
 		skills = newlist(
 			/skill/projectile/arrow,
 			/skill/sword/wood

@@ -1,4 +1,6 @@
-player/Cross(enemy/E) return istype(E) || ..()
+player
+	Cross(enemy/E)
+		return istype(E) || ..()
 
 enemy
 	parent_type = /mob
@@ -57,7 +59,8 @@ enemy
 		icon_state = "boar_1"
 		max_health = 3
 
-		var skill/projectile/spear/spear = new
+		var
+			skill/projectile/spear/spear = new
 
 		Tick()
 			..()
